@@ -1,7 +1,7 @@
 ## Hangman
 This is 'hangman' game.
 
-#How to play:
+# How to play:
  
 1)Download Hangman.py file
 
