@@ -6,28 +6,28 @@ Created on Sun Sep 17 13:15:34 2017
 """
 import random
 random.seed(0)
-i=random.randint(0,4)
-dict=['hello','apple','orange','smell','brink']
-print("Guess a letter:")
-letter=dict[i]
-N=len(letter)
-guess='*'*N
+i = random.randint(0, 4)
+DICT = ['hello', 'apple', 'orange', 'smell', 'brink']
+print("GUESS a LETTER:")
+LETTER = DICT[i]
+N = len(LETTER)
+GUESS = '*'*N
 
-num_attempts=0
-while(num_attempts<N):
-    inp=input()
-    inp=inp[0]
-    if inp in letter:
+ATTEMPTS = 0
+while ATTEMPTS < N:
+    INP = input()
+    INP = INP[0]
+    if INP in LETTER:
         for j in range(N):
-            if letter[j]==inp:
-                guess=guess[:j]+inp+guess[j+1:]
+            if LETTER[j] == INP:
+                GUESS = GUESS[:j]+INP+GUESS[j+1:]
         print('Hit!')
-        print('The word: '+guess)
-        if guess==letter:
+        print('The word: '+GUESS)
+        if GUESS == LETTER:
             print('You won!')
             break
     else:
-        num_attempts+=1
-        print('Nussed, mistake %d out of %d'% (num_attempts,N))
-if num_attempts>=N:
+        ATTEMPTS += 1
+        print('Nussed, mistake %d out of %d'% (ATTEMPTS, N))
+if ATTEMPTS >= N:
     print('You lost!')
