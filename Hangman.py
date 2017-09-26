@@ -4,6 +4,10 @@ Created on Sun Sep 17 13:15:34 2017
 
 @author: DK
 """
+def loss(ATTEMPTS,N):
+   if ATTEMPTS>=N:
+       return 'You lost!'
+   return 'You won!'
 import random
 random.seed(0)
 i = random.randint(0, 4)
@@ -24,10 +28,8 @@ while ATTEMPTS < N:
         print('Hit!')
         print('The word: '+GUESS)
         if GUESS == LETTER:
-            print('You won!')
-            break
+            break;
     else:
         ATTEMPTS += 1
         print('Nussed, mistake %d out of %d'% (ATTEMPTS, N))
-if ATTEMPTS >= N:
-    print('You lost!')
+print(loss(ATTEMPTS, N))
