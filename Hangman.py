@@ -1,14 +1,11 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Sep 17 13:15:34 2017
 
-@author: DK
-"""
-def loss(ATTEMPTS,N):
-   if ATTEMPTS>=N:
-       return 'You lost!'
-   return 'You won!'
-import random
+import random#calculate random numbers
+
+def loss(attempts, num):#calculate loss
+    if attempts >= num:
+        return 'You lost!'
+    return 'You won!'
+
 random.seed(0)
 i = random.randint(0, 4)
 DICT = ['hello', 'apple', 'orange', 'smell', 'brink']
@@ -28,8 +25,8 @@ while ATTEMPTS < N:
         print('Hit!')
         print('The word: '+GUESS)
         if GUESS == LETTER:
-            break;
+            break
     else:
         ATTEMPTS += 1
         print('Nussed, mistake %d out of %d'% (ATTEMPTS, N))
-print(loss(ATTEMPTS, N))
+print(loss(ATTEMPTS, N)+'\n')
