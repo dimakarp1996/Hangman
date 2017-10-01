@@ -9,7 +9,7 @@ This is 'hangman' game.
 
 3)In console, open the directory where the file is
 
-4)Type exec.py
+4)Type python3 exec.py
 
 5)Have fun!
 
@@ -18,6 +18,6 @@ This is 'hangman' game.
  
 1)-3): the same as in 'How to play'
 
-4)Type unit_tests.py
+4)Type python3 unit_tests.py
 
 If you don't get error, all tests are passed correctly
