@@ -16,8 +16,12 @@ This is 'hangman' game.
  
 1)-2): the same as in 'How to play'
 
-3)Type python3 setup.py test
+3)Type python3 unit_tests.py
 
-If you don't get error, all tests are passed correctly
+# How to get static analysis/code coverage
+
+1-2)the same as in 'How to play'
+
+3)Type python3 setup.py test
 
 Code coverage is presented in these tests too.
