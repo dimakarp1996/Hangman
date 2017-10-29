@@ -1,16 +1,16 @@
+#!/usr/bin/env python3
 
 """Setup script."""
 
 from setuptools import setup
 
-setup(
-    name="Hangman",
+setup(name="Hangman",
     version="0.0.0",
     author="Dmitry Karpov",
     author_email="dimakarp1996@yandex.ru",
     url="https://github.com/dimakarp1996/Hangman",
     license="MIT",
-    packages=['Hangman'],
+    packages=["Hangman"],
     install_requires=[
     ],
     setup_requires=[
