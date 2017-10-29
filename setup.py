@@ -4,7 +4,8 @@
 
 from setuptools import setup
 
-setup(name="Hangman",
+setup(
+    name="Hangman",
     version="0.0.0",
     author="Dmitry Karpov",
     author_email="dimakarp1996@yandex.ru",
