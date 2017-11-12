@@ -1,3 +1,6 @@
+[![Build Status][travis-badge]][travis-url]
+[![Coverage][coverage-image]][coverage-url]
+
 ## Hangman
 This is 'hangman' game.
 
@@ -21,3 +24,7 @@ This is 'hangman' game.
 4)Type python3 unit_tests.py
 
 If you don't get error, all tests are passed correctly
+[travis-url]: https://travis-ci.org/PPPoSD-2017/greetings
+[travis-badge]: https://travis-ci.org/PPPoSD-2017/greetings.svg?branch=master
+[coverage-image]: https://codecov.io/gh/PPPoSD-2017/greetings/branch/master/graph/badge.svg
+[coverage-url]: https://codecov.io/gh/PPPoSD-2017/greetings
