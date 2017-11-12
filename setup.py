@@ -9,7 +9,7 @@ setup(
     version="0.0.0",
     author="Dmitry Karpov",
     author_email="dimakarp1996@yandex.ru",
-    url="https://github.com/dimakarp1996/Hangman", 
+    url="https://github.com/dimakarp1996/Hangman",
     license="MIT",
     packages=[
         "Hangman"
