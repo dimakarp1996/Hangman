@@ -25,7 +25,7 @@ This is 'hangman' game.
 
 If you don't get error, all tests are passed correctly
 
-++[travis-url]: https://travis-ci.org/dimakarp1996/Hangman
-++[travis-badge]: https://travis-ci.org/dimakarp1996/Hangman.svg?branch=master
-++[coverage-image]: https://codecov.io/gh/dimakarp1996/Hangman/branch/master/graph/badge.svg
-++[coverage-url]: https://codecov.io/gh/dimakarp1996/Hangman
+[travis-url]: https://travis-ci.org/dimakarp1996/Hangman
+[travis-badge]: https://travis-ci.org/dimakarp1996/Hangman.svg?branch=master
+[coverage-image]: https://codecov.io/gh/dimakarp1996/Hangman/branch/master/graph/badge.svg
+[coverage-url]: https://codecov.io/gh/dimakarp1996/Hangman
