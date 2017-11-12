@@ -1,5 +1,6 @@
 [![Build Status][travis-badge]][travis-url]
 [![Coverage][coverage-image]][coverage-url]
+
 ## Hangman
 This is 'hangman' game.
 
