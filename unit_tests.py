@@ -48,8 +48,8 @@ def test_gener_init():
         assert length == len(letter)
         assert guess == '*'*length
         assert attempts == 0
-        
-        
+
+
 test_check()
 test_loss()
 test_gener_random()
