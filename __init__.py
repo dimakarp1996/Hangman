@@ -56,4 +56,5 @@ def play():
     while attempts < length and guess != letter:
         inp = get_input()
         guess, letter, attempts = check(inp, guess, letter, attempts)
-return loss(attempts, length)
+    print(loss(attempts, length))
+    return 0
