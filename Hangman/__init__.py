@@ -7,7 +7,7 @@ Created on Tue Nov 14 10:59:51 2017
 """
 
 import random  # calculate random numbers
-DICT = ['east', 'eats' ,'seat', 'teas']
+DICT = ['east', 'eats', 'seat', 'teas']
 
 
 def loss(attempts, num):  # calculate loss
