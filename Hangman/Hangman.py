@@ -3,3 +3,6 @@ def main():
     a = play()
     print(a)
     return 0
+
+
+main()
