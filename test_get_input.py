@@ -10,5 +10,5 @@ from Hangman import get_input
 
 
 def test_get_input():
-    with mock.patch('builtins.raw_input', side_effect='jjjj'):
+    with mock.patch('builtins.input', side_effect='jjjj'):
         assert get_input() == 'j'
