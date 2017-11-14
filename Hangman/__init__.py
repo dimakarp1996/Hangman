@@ -36,14 +36,14 @@ def get_input():
     return var[0]
 
 
-def generate_random():
+def gener_random():
     random.seed(0)
     i = random.randint(0, 3)
     print("GUESS a LETTER:")
     return i
 
 
-def generate_init(i):
+def gener_init(i):
     letter = DICT[i]
     length = len(letter)
     guess = '*'*length
@@ -52,8 +52,8 @@ def generate_init(i):
 
 
 def play():
-    i = generate_random()
-    letter, length, guess, attempts = generate_init(i)
+    i = gener_random()
+    letter, length, guess, attempts = gener_init(i)
     while attempts < length and guess != letter:
         inp = get_input()
         guess, letter, attempts = check(inp, guess, letter, attempts)
