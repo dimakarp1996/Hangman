@@ -59,4 +59,3 @@ def play():
     print(loss(attempts, length))
     return 0
 
-
