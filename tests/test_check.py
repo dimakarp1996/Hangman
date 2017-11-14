@@ -10,7 +10,7 @@ from Hangman import check, DICT
 
 def test_check():
     game_situations = []
-    for word in dict:
+    for word in DICT:
         for i in range(4):
             current = word
             letters = combinations(word, i)
