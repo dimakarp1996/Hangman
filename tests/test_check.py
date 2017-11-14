@@ -13,9 +13,10 @@ def test_check():
     for word in DICT:
         for i in range(4):
             current = word
-            letters = combinations(word, i)
-            for letter in letters:
-                current = current.replace(letter, '*')
+            comb = combinations(word, i)
+            for letters in comb:
+                for letter in letters:
+                    current = current.replace(letter, '*')
             if current not in game_situations:
                 game_situations.append(current)
 
