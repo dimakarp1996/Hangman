@@ -14,7 +14,7 @@ This is 'hangman' game.
 
 4)Type python3 setup.py build install
 
-5)Type python3 Hangman.py
+5)Type python3 Hangman/Hangman.py
 
 6)Have fun!
 
