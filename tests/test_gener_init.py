@@ -9,7 +9,7 @@ from Hangman import gener_init, DICT
 
 
 def test_gener_init():
-    for i in range(5):
+    for i in range(4):
         letter, length, guess, attempts = gener_init(i)
         assert letter == DICT[i]
         assert length == len(letter)
