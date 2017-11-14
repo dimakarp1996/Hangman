@@ -30,9 +30,10 @@ def check(inp, guess, letter, attempts):
         print('Nussed, mistake %d out of %d' % (attempts, length))
     return guess, letter, attempts
 
+
 def get_input():
-    l = input()
-    return l[0]
+    var = input()
+    return var[0]
 
 
 def generate_random():
