@@ -23,19 +23,24 @@ def check(inp, guess, letter, attempts):
         print('Nussed, mistake %d out of %d' % (attempts, length))
     return guess, letter, attempts
 
-
-def play():
+def get_input():
+    l=input()
+    return l[0]
+def generate_random():
     random.seed(0)
     i = random.randint(0, 4)
     print("GUESS a LETTER:")
+    return i
+def generate_init(i):
     letter = DICT[i]
     length = len(letter)
     guess = '*'*length
     attempts = 0
-    while attempts < length:
-        inp = input()
-        inp = inp[0]
+    return letter, length, guess, attempts
+def play():
+    i = generate_random()
+    letter, length, guess, attempts = generate_init(i)
+    while attempts < length and guess != letter:
+        inp = get_input()
         guess, letter, attempts = check(inp, guess, letter, attempts)
-        if guess == letter:
-            break
-    print(loss(attempts, length)+'\n')
+    return (loss(attempts, length)+'\n')
