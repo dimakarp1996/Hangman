@@ -7,11 +7,11 @@ Created on Tue Nov 14 11:00:45 2017
 """
 
 import mock
-from Hangman.tests import test_check
-from Hangman.tests import test_loss
-from Hangman.tests import test_gener_random
-from Hangman.tests import test_get_input
-from Hangman.tests import test_gener_init
+from tests import test_check
+from tests import test_loss
+from tests import test_gener_random
+from tests import test_get_input
+from tests import test_gener_init
 
 
 test_check()
