@@ -2,12 +2,11 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Nov 14 10:59:51 2017
-
 @author: tcs-user
 """
 
 import random  # calculate random numbers
-DICT = ['hello', 'apple', 'phone', 'smell', 'brink']
+DICT = ['east', 'eats', 'seat', 'teas']
 
 
 def loss(attempts, num):  # calculate loss
@@ -38,7 +37,7 @@ def get_input():
 
 def gener_random():
     random.seed(0)
-    i = random.randint(0, 4)
+    i = random.randint(0, 3)
     print("GUESS a LETTER:")
     return i
 
@@ -52,9 +51,9 @@ def gener_init(i):
 
 
 def play():
-    i = generate_random()
-    letter, length, guess, attempts = generate_init(i)
+    i = gener_random()
+    letter, length, guess, attempts = gener_init(i)
     while attempts < length and guess != letter:
         inp = get_input()
         guess, letter, attempts = check(inp, guess, letter, attempts)
-    return (loss(attempts, length)+'\n')
+return loss(attempts, length)
