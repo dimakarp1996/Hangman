@@ -7,8 +7,8 @@ Created on Tue Nov 14 11:52:21 2017
 """
 import mock
 from Hangman import get_input
+
+
 def test_get_input():
-    with mock.patch('__builtin__.raw_input', side_effect='jjjj'):
+    with mock.patch('builtins.raw_input', side_effect='jjjj'):
         assert get_input() == 'j'
-
-
