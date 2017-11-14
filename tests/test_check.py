@@ -30,9 +30,9 @@ def test_check():
                                      i) == (guess, word, i + 1)
                     else:
                         ind = word.find(lett)
-                        guess1 = guess[:ind] + lett + guess[ind+1:]
+                        guess1 = guess[:ind] + lett + guess[ind + 1:]
                         assert check(lett, guess, word,
                                      i) == (guess1, word, i)
 
-                
+
 test_check()
