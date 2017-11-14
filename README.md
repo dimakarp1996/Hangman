@@ -6,13 +6,13 @@ This is 'hangman' game.
 
 # How to play:
  
-1)Download Hangman.py,exec.py,unit_tests.py file
+1)Download the repository
 
 2)Download python3(if it isn't already installed)
 
-3)In console, open the directory where the file is
+3)In console, open the reposetory direcrory
 
-4)Type python3 exec.py
+4)Type python3 Hangman.py
 
 5)Have fun!
 
