@@ -33,3 +33,5 @@ def test_check():
                         guess1 = guess[:ind] + lett + guess[ind+1:]
                         assert check(lett, guess, word,
                                      i) == (guess1, word, i)
+ 
+test_check()
