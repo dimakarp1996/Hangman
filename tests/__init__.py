@@ -1,25 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Nov 14 12:36:57 2017
-
-@author: tcs-user
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Nov 14 11:00:45 2017
-@author: tcs-user
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Nov 14 11:00:45 2017
-@author: tcs-user
-"""
-
 import mock
 from test_check import test_check
 from test_loss import test_loss
