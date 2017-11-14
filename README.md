@@ -12,9 +12,11 @@ This is 'hangman' game.
 
 3)In console, open the reposetory direcrory
 
-4)Type python3 Hangman.py
+4)Type python3 setup.py build install
 
-5)Have fun!
+5)Type python3 Hangman.py
+
+6)Have fun!
 
 
 # How to run unit tests:
