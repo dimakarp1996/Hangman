@@ -57,6 +57,6 @@ def play():
         inp = get_input()
         guess, letter, attempts = check(inp, guess, letter, attempts)
     print(loss(attempts, length))
+    return 0
 
 
-return 0
