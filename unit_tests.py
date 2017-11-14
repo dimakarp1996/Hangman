@@ -7,7 +7,7 @@ Created on Tue Nov 14 11:00:45 2017
 """
 
 import mock
-from Hangman import check, loss, DICT, get_input, generate_random, generate_init
+from Hangman import check, loss, DICT, get_input, gener_random, gener_init
 
 
 def test_check():
@@ -31,8 +31,8 @@ def test_loss():
     assert loss(9, 7) == 'You lost!'
 
 
-def test_generate_random():
-    c = generate_random()
+def test_gener_random():
+    c = gener_random()
     assert c >= 0 and c <= 4
 
 
@@ -41,16 +41,18 @@ def test_get_input():
         assert get_input() == 'j'
 
 
-def test_generate_init():
+def test_gener_init():
     for i in range(5):
-        letter, length, guess, attempts = generate_init(i)
+        letter, length, guess, attempts = gener_init(i)
         assert letter == DICT[i]
         assert length == len(letter)
         assert guess == '*'*length
         assert attempts == 0
+        
+        
 test_check()
 test_loss()
-test_generate_random()
+test_gener_random()
 test_get_input()
-test_generate_init()
+test_gener_init()
 print('All tests passed correctly')
