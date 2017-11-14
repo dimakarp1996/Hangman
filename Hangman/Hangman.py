@@ -1,5 +1,5 @@
 def main():
-    from Hangman import play
+    from Hangman.__init__ import play
     a = play()
     print(a)
     return 0
