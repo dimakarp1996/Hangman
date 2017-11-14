@@ -21,9 +21,9 @@ def check(inp, guess, letter, attempts):
     if inp in letter:
         for j in range(length):
             if letter[j] == inp:
-                guess = guess[:j] + inp + guess[j+1:]
+                guess = guess[:j] + inp + guess[j + 1:]
         print('Hit!')
-        print('The word: '+guess)
+        print('The word: ' + guess)
     else:
         attempts += 1
         print('Nussed, mistake %d out of %d' % (attempts, length))
@@ -45,7 +45,7 @@ def gener_random():
 def gener_init(i):
     letter = DICT[i]
     length = len(letter)
-    guess = '*'*length
+    guess = '*' * length
     attempts = 0
     return letter, length, guess, attempts
 
@@ -57,6 +57,6 @@ def play():
         inp = get_input()
         guess, letter, attempts = check(inp, guess, letter, attempts)
     print(loss(attempts, length))
+
+
 return 0
-
-
