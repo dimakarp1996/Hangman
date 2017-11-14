@@ -1,3 +1,4 @@
+import mock
 from Hangman import play
 
 def test_play():
