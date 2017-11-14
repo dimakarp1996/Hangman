@@ -8,6 +8,8 @@ Created on Tue Nov 14 11:00:45 2017
 
 import mock
 from Hangman import check, loss, DICT, get_input, generate_random, generate_init
+
+
 def test_check():
     alph = 'abcdefghijklmnopqrstuvwxyz'
     for i in range(5):
@@ -27,17 +29,17 @@ def test_loss():
     assert loss(5, 7) == 'You won!'
     assert loss(7, 7) == 'You lost!'
     assert loss(9, 7) == 'You lost!'
-    
-    
+
+
 def test_generate_random():
     c = generate_random()
     assert c >= 0 and c <= 4
-    
-    
+
+
 def test_get_input():
-    with mock.patch('__builtin__.raw_input', side_effect = 'jjjj'):
+    with mock.patch('__builtin__.raw_input', side_effect='jjjj'):
         assert get_input() == 'j'
-        
+
 
 def test_generate_init():
     for i in range(5):
