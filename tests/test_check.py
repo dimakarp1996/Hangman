@@ -34,5 +34,5 @@ def test_check():
                         assert check(lett, guess, word,
                                      i) == (guess1, word, i)
 
-                        
+                
 test_check()
