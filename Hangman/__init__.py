@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov 14 10:59:51 2017
+
+@author: tcs-user
+"""
 
 import random  # calculate random numbers
 DICT = ['hello', 'apple', 'phone', 'smell', 'brink']
@@ -24,19 +31,25 @@ def check(inp, guess, letter, attempts):
     return guess, letter, attempts
 
 def get_input():
-    l=input()
+    l = input()
     return l[0]
+
+
 def generate_random():
     random.seed(0)
     i = random.randint(0, 4)
     print("GUESS a LETTER:")
     return i
+
+
 def generate_init(i):
     letter = DICT[i]
     length = len(letter)
     guess = '*'*length
     attempts = 0
     return letter, length, guess, attempts
+
+
 def play():
     i = generate_random()
     letter, length, guess, attempts = generate_init(i)
